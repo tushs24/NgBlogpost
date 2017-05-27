@@ -1,0 +1,21 @@
+<div class="">
+	<div class="form-group">
+	 	<label class="control-label" for="inputSuccess1">Blog name</label>
+		<input class="form-control" #blogname type="text">
+	</div>
+	<div class="form-group">
+	 	<label class="control-label" for="inputSuccess1">Blog Comment</label>
+		<textarea name="" id="" cols="30" rows="10" class="form-control" #blogcomment></textarea>
+	</div>
+
+	<div><button class="btn btn-primary" (click)="addBlog(blogname,blogcomment)">Add Comment</button></div>
+
+	<div class="margintop">
+		<div *ngFor="let blog of blogs" class="card marginb15">
+			<div class="card-header">{{blog.descr}}</div>
+			<div class="card-block">{{blog.descr1}}</div>
+		</div>
+	</div>
+
+</div>
+
